@@ -1,0 +1,117 @@
+/* ESTILOS RESET */
+* {
+    margin: 0;
+    padding: 0;                 /** ESTO HACE QUE NO TENGA ESPACIOS **/
+    box-sizing: border-box;
+}
+
+/* Reset para las listas ul y li */
+header nav ul li a {
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+}
+
+/* MEDIDAS DEL BODY */
+#body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* MEDIDAS DEL HEADER */
+#header {
+    width: 100%;
+    height: 70px;
+}
+
+/* MEDIDAS DEL MAIN */
+#main {
+    min-height: 100vh;  /** ALTO MINIMO DE LA PANTALLA * ESTO ME SIRVE PARA QUE SE A VEA LA PANTALLA COMPLETA SIN 
+                            QUE EL FOOTER SE ME VENGA ENCIMA */
+}
+
+/* IMÁGENES DEL INDEX */
+/* Agregar Flexbox con dirección horizontal a las secciones de las imágenes */
+#fotogim,
+#fotodonbajon,
+#fotolook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes */
+#fotogim img,
+#fotodonbajon img,
+#fotolook img {
+    width: auto;
+    height: 400px;
+    margin: 0 10px;
+}
+
+
+
+/* FOOTER */
+#footerindex {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: #cfd1cd;
+}
+
+/** PAGINA VIDA  *aca va la medidas de la foto menu de pagina VIDA**/
+
+.imgprincipal {
+        width: 100%; /* La imagen ocupa todo el ancho disponible */
+        height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+        max-height: 80vh; /* Limitar la altura al 80% del alto de la ventana */
+        display: block; /* Asegura que la imagen se comporte correctamente */
+        margin: 0 auto; /* Centra la imagen horizontalmente si es necesario */
+        
+    }
+    
+/* MEDIDAS DEL BODY */
+#bodyvida {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* MEDIDAS DEL MAIN */
+#mainvida {
+    min-height: 100vh;  /** ALTO MINIMO DE LA PANTALLA * ESTO ME SIRVE PARA QUE SE A VEA LA PANTALLA COMPLETA SIN 
+                            QUE EL FOOTER SE ME VENGA ENCIMA */
+}
+
+/** ACA VA EL GRIDS (CUADRICULA DE FOTOS) DE LA PAGINA DE VIDA  **/
+
+#galFotos  {
+    width: 300px; /* Ancho deseado */
+    height: 200px; /* Alto deseado */
+    object-fit: cover; /* Permite que la imagen se ajuste sin deformarse */
+    background-color: rgba(0, 125, 174, 0.542);
+    display: flex
+    
+}
+
+
+/*
+.FotoBox{
+    background-color: #fdfdfd;
+    border: 5px solid;
+    width: 200px;
+} */
+
+/** Estilo del grid de fotos **/
+
+
+/**FOOTER VIDA**/
+
+#footervida {
+    
+    margin-top: auto; 
+    width: 100%; 
+    height: auto;
+    background-color:  #cfd1cd;
+}
+
