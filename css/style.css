@@ -6,10 +6,16 @@
 }
 
 /* Reset para las listas ul y li */
-header nav ul li a {
+li , a {
     text-decoration: none;
     font-style: none;
     list-style: none;
+}
+
+#nav ul li a:hover {
+    color: black;
+    font-size: 25px;
+
 }
 
 /* MEDIDAS DEL BODY */
@@ -19,7 +25,7 @@ header nav ul li a {
 }
 
 /* MEDIDAS DEL HEADER */
-#header {
+#headerindex {
     width: 100%;
     height: 70px;
 }
@@ -52,6 +58,9 @@ header nav ul li a {
 
 
 
+
+
+
 /* FOOTER */
 #footerindex {
     margin-top: auto;
@@ -68,8 +77,10 @@ header nav ul li a {
         max-height: 80vh; /* Limitar la altura al 80% del alto de la ventana */
         display: block; /* Asegura que la imagen se comporte correctamente */
         margin: 0 auto; /* Centra la imagen horizontalmente si es necesario */
+        object-fit: cover;
         
     }
+    
     
 /* MEDIDAS DEL BODY */
 #bodyvida {
@@ -85,24 +96,57 @@ header nav ul li a {
 
 /** ACA VA EL GRIDS (CUADRICULA DE FOTOS) DE LA PAGINA DE VIDA  **/
 
-#galFotos  {
-    width: 300px; /* Ancho deseado */
-    height: 200px; /* Alto deseado */
-    object-fit: cover; /* Permite que la imagen se ajuste sin deformarse */
-    background-color: rgba(0, 125, 174, 0.542);
-    display: flex
+
+#galFotos {
+    display: flex; /* Utilizar flexbox para colocar los artículos en una fila */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a una nueva línea si no caben en el ancho disponible */
+    justify-content: center; /* Centrar los elementos horizontalmente */
     
 }
 
+/** ANIMACION DE FOTO VIDA **/
 
-/*
-.FotoBox{
-    background-color: #fdfdfd;
-    border: 5px solid;
-    width: 200px;
-} */
+.FotoBox:active {
+    box-shadow: 3px 5px 5px black;
+    transition: 1s;
+    }
+
+#galFotos article {
+    margin: 0 10px 20px; /* Márgenes entre los artículos */
+    text-align: center; /* Centrar el contenido del artículo */
+}
+
+#galFotos img {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: auto; /* Ajustar automáticamente la altura */
+    max-width: 400px; /* Ancho máximo deseado */
+    max-height: 200px; /* Alto máximo deseado */
+    object-fit: cover; /* Permite que la imagen se ajuste sin deformarse */
+    border: 2px solid;
+    flex: 0 0 300px; /* Establecer un ancho fijo para cada imagen */
+}
 
 /** Estilo del grid de fotos **/
+
+/**ESTILO DEL MAPA**/
+
+#mapa {
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo total para ambos mapas */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    display: flex; /* Utiliza flexbox para organizar los elementos en línea */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+}
+
+.mapavida1,
+.mapavida2 {
+    width: 500px; /* Asigna el 50% del ancho para cada mapa */
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho y alto total */
+    border: 30px solid rgb(1, 1, 1); /* Añade un borde para visualizar los límites del mapa */
+}
+
 
 
 /**FOOTER VIDA**/

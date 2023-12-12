@@ -9,7 +9,7 @@
 <body id="body">
     
     <!-- HEADER -->
-    <header id="header">  
+    <header id="headerindex">  
         <nav id="nav">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -25,6 +25,7 @@
         <section>
             <!-- Contenido de Sobre mi -->
             <article>
+                <br>
                 <h1 id="Sobre_mi">Sobre mi</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis, alias dolore adipisci cumque, exercitationem impedit commodi cum esse deleniti sequi eum aut praesentium ducimus numquam aperiam iusto id debitis unde quasi quis? Eveniet quod repudiandae consequatur animi a. Libero ipsum ut voluptates placeat sequi quos, molestiae consectetur non recusandae, perferendis aspernatur natus, esse doloremque dignissimos tempore autem perspiciatis rem repudiandae est a eligendi eos? Ad beatae tempora enim odio dolores ipsa quasi eos tempore officiis! Voluptatem exercitationem excepturi fuga vel magnam ullam beatae eveniet odio vero esse ea temporibus itaque, reiciendis numquam atque blanditiis sunt. Similique neque vitae ipsa!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis, alias dolore adipisci cumque, exercitationem impedit commodi cum esse deleniti sequi eum aut praesentium ducimus numquam aperiam iusto id debitis unde quasi quis? Eveniet quod repudiandae consequatur animi a. Libero ipsum ut voluptates placeat sequi quos, molestiae consectetur non recusandae, perferendis aspernatur natus, esse doloremque dignissimos tempore autem perspiciatis rem repudiandae est a eligendi eos? Ad beatae tempora enim odio dolores ipsa quasi eos tempore officiis! Voluptatem exercitationem excepturi fuga vel magnam ullam beatae eveniet odio vero esse ea temporibus itaque, reiciendis numquam atque blanditiis sunt. Similique neque vitae ipsa! ... </p>
             </article>
@@ -47,22 +48,26 @@
             </section>
 
             <!-- Contacto -->
-            <article>
+            <section>
                 <h3 id="Contacto">Contacto</h3>
+            </section>    
                 <section>
                     <form action="/procesar-datos" method="post">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
-                    
+                        
                         <label for="apellido">Apellido:</label>
                         <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br><br>
-                    
+                        
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+                        
                         <button type="submit">Enviar</button>
                         <button type="reset">Reset</button>
                     </form>
                 </section>
-            </article>
-        </section>
+            
+        
     </main>
 
     <!-- FOOTER -->
